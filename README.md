@@ -50,6 +50,10 @@ Available methods:
 * `clear` - `(coords?)` - clears canvas area. If no coordinates is provided, whole canvas gets cleared
 * `createPattern` - `(options: CanvasPatternDefinition)` - creates a pattern
 * `createLinearGradient` - `(options?: CanvasObjectCoordinates)` - creates linear gradient object as `CanvasLinearGradientColor`
+* `createText` - `(setup?: TextSetup)` - creates text component
+* `createRectangle` - `(coordinates?: CanvasObjectCoordinates)` - creates a rectangle component
+* `createPath` - `(startingPoint?: CanvasPoint)` - creates a path component
+* `createImage` - `(setup?: CanvasImageSetup)` - creates an image component
 
 # Components (drawables)
 All objects implement method `draw()` that is used to draw it on the canvas.
@@ -344,6 +348,6 @@ Creates instance of object style that accepts all kind of colors in string forma
 * `endAngle`?: number;
 
 ## ArcOptions 
-* startAngle: number;
-* endAngle: number;
-* radius: number;
+* `startAngle`: number;
+* `endAngle`: number;
+* `radius`: number;
